@@ -183,8 +183,7 @@ struct SendView: View {
     }
 
     private func commitFakeTransaction() {
-        guard let asset = selectedAsset else { return }
-        var asset = asset
+        guard var asset = selectedAsset else { return }
         asset.amount = max(0, asset.amountDecimal - amountDecimal).formatted(maxFractionDigits: 6)
         store.upsert(asset)
 
