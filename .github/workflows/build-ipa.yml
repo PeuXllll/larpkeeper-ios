@@ -1,0 +1,47 @@
+name: Build unsigned IPA
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show toolchain
+        run: |
+          xcodebuild -version
+          xcodebuild -showsdks | grep -i iphoneos
+
+      - name: Build app (unsigned, generic iOS device)
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -project LarpKeeper.xcodeproj \
+            -target LarpKeeper \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            build
+
+      - name: Package IPA
+        run: |
+          mkdir -p build/Payload
+          cp -R "build/Build/Products/Release-iphoneos/LarpKeeper.app" build/Payload/
+          cd build
+          zip -qry LarpKeeper-unsigned.ipa Payload
+          ls -la LarpKeeper-unsigned.ipa
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LarpKeeper-unsigned-ipa
+          path: build/LarpKeeper-unsigned.ipa
+          if-no-files-found: error

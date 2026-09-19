@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAFF00000000000000000011 /* LarpKeeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF00000000000000000001 /* LarpKeeperApp.swift */; };
+		AAFF00000000000000000012 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF00000000000000000002 /* MainTabView.swift */; };
+		AAFF00000000000000000013 /* DemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF00000000000000000003 /* DemoStore.swift */; };
+		AAFF00000000000000000014 /* FakeAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF00000000000000000004 /* FakeAsset.swift */; };
+		AAFF00000000000000000015 /* FakeTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF00000000000000000005 /* FakeTransaction.swift */; };
+		AAFF00000000000000000016 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF00000000000000000006 /* HistoryView.swift */; };
+		AAFF00000000000000000017 /* DisclaimerGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF00000000000000000007 /* DisclaimerGate.swift */; };
+		AAFF00000000000000000018 /* ReceiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF00000000000000000008 /* ReceiveView.swift */; };
+		AAFF00000000000000000019 /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF00000000000000000009 /* SendView.swift */; };
+		AAFF0000000000000000001A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF0000000000000000000A /* SettingsView.swift */; };
+		AAFF0000000000000000001B /* AssetEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF0000000000000000000B /* AssetEditorView.swift */; };
+		AAFF0000000000000000001C /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF0000000000000000000C /* WalletView.swift */; };
+		AAFF0000000000000000001D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFF0000000000000000000D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA00000124AABBCC02 /* LarpKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LarpKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAFF00000000000000000001 /* LarpKeeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LarpKeeperApp.swift; sourceTree = "<group>"; };
+		AAFF00000000000000000002 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		AAFF00000000000000000003 /* DemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoStore.swift; sourceTree = "<group>"; };
+		AAFF00000000000000000004 /* FakeAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAsset.swift; sourceTree = "<group>"; };
+		AAFF00000000000000000005 /* FakeTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTransaction.swift; sourceTree = "<group>"; };
+		AAFF00000000000000000006 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		AAFF00000000000000000007 /* DisclaimerGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerGate.swift; sourceTree = "<group>"; };
+		AAFF00000000000000000008 /* ReceiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveView.swift; sourceTree = "<group>"; };
+		AAFF00000000000000000009 /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
+		AAFF0000000000000000000A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AAFF0000000000000000000B /* AssetEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetEditorView.swift; sourceTree = "<group>"; };
+		AAFF0000000000000000000C /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		AAFF0000000000000000000D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		AAFF000000000000000000F1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF000000000000000000F2 /* App */,
+				AAFF000000000000000000FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAFF000000000000000000F2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF0000000000000000000D /* Assets.xcassets */,
+				AAFF000000000000000000F3 /* Source */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AAFF000000000000000000F3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF000000000000000000F4 /* App */,
+				AAFF000000000000000000F5 /* Models */,
+				AAFF000000000000000000F6 /* Features */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		AAFF000000000000000000F4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF00000000000000000001 /* LarpKeeperApp.swift */,
+				AAFF00000000000000000002 /* MainTabView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AAFF000000000000000000F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF00000000000000000003 /* DemoStore.swift */,
+				AAFF00000000000000000004 /* FakeAsset.swift */,
+				AAFF00000000000000000005 /* FakeTransaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AAFF000000000000000000F6 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF000000000000000000F7 /* History */,
+				AAFF000000000000000000F8 /* Onboarding */,
+				AAFF000000000000000000F9 /* Receive */,
+				AAFF000000000000000000FA /* Send */,
+				AAFF000000000000000000FB /* Settings */,
+				AAFF000000000000000000FC /* Wallet */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AAFF000000000000000000F7 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF00000000000000000006 /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		AAFF000000000000000000F8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF00000000000000000007 /* DisclaimerGate.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		AAFF000000000000000000F9 /* Receive */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF00000000000000000008 /* ReceiveView.swift */,
+			);
+			path = Receive;
+			sourceTree = "<group>";
+		};
+		AAFF000000000000000000FA /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF00000000000000000009 /* SendView.swift */,
+			);
+			path = Send;
+			sourceTree = "<group>";
+		};
+		AAFF000000000000000000FB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF0000000000000000000A /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		AAFF000000000000000000FC /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF0000000000000000000B /* AssetEditorView.swift */,
+				AAFF0000000000000000000C /* WalletView.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		AAFF000000000000000000FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA00000124AABBCC02 /* LarpKeeper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA00000124AABBCC41 /* LarpKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA00000124AABBCC51 /* Build configuration list for PBXNativeTarget "LarpKeeper" */;
+			buildPhases = (
+				AA00000124AABBCC61 /* Sources */,
+				AA00000124AABBCC62 /* Frameworks */,
+				AA00000124AABBCC63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LarpKeeper;
+			productName = LarpKeeper;
+			productReference = AA00000124AABBCC02 /* LarpKeeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA00000124AABBCC70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					AA00000124AABBCC41 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = AA00000124AABBCC80 /* Build configuration list for PBXProject "LarpKeeper" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAFF000000000000000000F1 /* Main */;
+			productRefGroup = AAFF000000000000000000FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA00000124AABBCC41 /* LarpKeeper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA00000124AABBCC63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFF0000000000000000001D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA00000124AABBCC61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFF00000000000000000011 /* LarpKeeperApp.swift in Sources */,
+				AAFF00000000000000000012 /* MainTabView.swift in Sources */,
+				AAFF00000000000000000013 /* DemoStore.swift in Sources */,
+				AAFF00000000000000000014 /* FakeAsset.swift in Sources */,
+				AAFF00000000000000000015 /* FakeTransaction.swift in Sources */,
+				AAFF00000000000000000016 /* HistoryView.swift in Sources */,
+				AAFF00000000000000000017 /* DisclaimerGate.swift in Sources */,
+				AAFF00000000000000000018 /* ReceiveView.swift in Sources */,
+				AAFF00000000000000000019 /* SendView.swift in Sources */,
+				AAFF0000000000000000001A /* SettingsView.swift in Sources */,
+				AAFF0000000000000000001B /* AssetEditorView.swift in Sources */,
+				AAFF0000000000000000001C /* WalletView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA00000124AABBCC62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA00000124AABBCC81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Debug;
+		};
+		AA00000124AABBCC82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Release;
+		};
+		AA00000124AABBCC91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LarpKeeper;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.larpkeeper.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA00000124AABBCC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LarpKeeper;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.larpkeeper.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA00000124AABBCC80 /* Build configuration list for PBXProject "LarpKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00000124AABBCC81 /* Debug */,
+				AA00000124AABBCC82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA00000124AABBCC51 /* Build configuration list for PBXNativeTarget "LarpKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00000124AABBCC91 /* Debug */,
+				AA00000124AABBCC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA00000124AABBCC70 /* Project object */;
+}
