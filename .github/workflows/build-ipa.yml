@@ -22,9 +22,10 @@ jobs:
           set -o pipefail
           xcodebuild \
             -project LarpKeeper.xcodeproj \
-            -target LarpKeeper \
+            -scheme LarpKeeper \
             -configuration Release \
             -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
             -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
